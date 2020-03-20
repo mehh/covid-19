@@ -1,0 +1,39 @@
+
+// Font.
+$font: (
+  primary: ("PT Sans", sans-serif),
+  secondary: ("PT Serif", serif)
+);
+
+// Palette.
+$palette: (
+  primary:       #5e5e5e,
+  secondary:     darken(#5e5e5e, 25%),
+  meta:          lighten(#5e5e5e, 25%),
+  border:        lighten(#5e5e5e, 50%),
+  bg:            lighten(#5e5e5e, 60%),
+  accent:        #3cb464,
+  accent-blue:   #108afb,
+  accent-black:  #323232,
+  accent-red:    #a51c30,
+  black: #000000
+);
+
+@import "sass/imports/functions";
+
+// @import "sass/fontawesome.min.css";
+// @import "sass/brands.min.css";
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+@import "sass/imports/reset";
+@import "sass/imports/general";
+@import "sass/imports/icons";
+@import "sass/imports/structure";
+@import "sass/imports/header";
+@import "sass/imports/content";
+@import "sass/imports/subscribe";
+@import "sass/imports/footer";
+@import "sass/imports/palettes";
+
+@import "sass/components/intro";

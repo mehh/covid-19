@@ -22,6 +22,12 @@ export default class Body extends React.Component {
                     _.get(this.props, 'pageContext.frontmatter.canonical_url') && 
                     <link rel="canonical" href={_.get(this.props, 'pageContext.frontmatter.canonical_url')}/>
                     }
+                    <link
+                        rel="stylesheet"
+                        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                        crossorigin="anonymous"
+                    />                    
                 </Helmet>
                   <div id="page" className={'site layout-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style') + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette')}>
                     <Header {...this.props} />

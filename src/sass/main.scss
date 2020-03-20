@@ -15,7 +15,8 @@ $palette: (
   accent:        #3cb464,
   accent-blue:   #108afb,
   accent-black:  #323232,
-  accent-red:    #a51c30
+  accent-red:    #a51c30,
+  black: #000000
 );
 
 @import "imports/functions";
@@ -32,3 +33,5 @@ $palette: (
 @import "imports/subscribe";
 @import "imports/footer";
 @import "imports/palettes";
+
+@import "components/intro";

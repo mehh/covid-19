@@ -2,6 +2,7 @@ module.exports = {
     pathPrefix: '/',
     siteMetadata: require('./site-metadata.json'),
     plugins: [
+        `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         `gatsby-source-data`,
         {
@@ -11,13 +12,13 @@ module.exports = {
                 path: `${__dirname}/src/pages`,
             },
         },
-        {
-            resolve: `gatsby-plugin-stackbit-static-sass`,
-            options: {
-                inputFile: `${__dirname}/src/sass/main.scss`,
-                outputFile: `${__dirname}/public/assets/css/main.css`
-            },
-        },
+        // {
+        //     resolve: `gatsby-plugin-stackbit-static-sass`,
+        //     options: {
+        //         inputFile: `${__dirname}/src/sass/main.scss`,
+        //         outputFile: `${__dirname}/public/assets/css/main.css`
+        //     },
+        // },
         {
             resolve: `gatsby-transformer-remark`,
             options: {
