@@ -23,8 +23,14 @@ export default class Home extends React.Component {
               <div className="post-feed">
                 <Container>
                   <Row>
+                    <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                      <h2 class="mb-4">View the Offers</h2>
+                      <p>Discover all these wonderful offers during this time.</p>
+                    </div>
+                  </Row>
+                  <Row>
                       {_.map(display_posts, (post, post_idx) => (
-                      <article key={post_idx} className="post post-card">
+                      <article key={post_idx} className="post post-card" data-tags={_.get(post, 'frontmatter.tags')}>
                         <div className="post-card-inside">
                           {_.get(post, 'frontmatter.thumb_img_path') && 
                           <Link className="post-card-thumbnail" to={safePrefix(_.get(post, 'url'))}>
@@ -38,6 +44,7 @@ export default class Home extends React.Component {
                                 dateTime={moment(_.get(post, 'frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date')).strftime('%B %d, %Y')}</time>
                               </div>
                               <h2 className="post-title"><Link to={safePrefix(_.get(post, 'url'))} rel="bookmark">{_.get(post, 'frontmatter.title')}</Link></h2>
+                              <h3 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h3>
                             </header>
                             <div className="post-excerpt">
                               <p>{_.get(post, 'frontmatter.excerpt')}</p>

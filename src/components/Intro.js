@@ -12,30 +12,49 @@ import {markdownify, Link, safePrefix} from '../utils';
 export default class Intro extends React.Component {
     render() {
         return (
-            <header class="page-header page-header-dark bg-gradient-primary-to-secondary">
-                <div class="page-header-content pt-10">
-                  <Container>
-                    <Row>
-                            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
-                                <h1 class="page-header-title">#UnitedApart</h1>
-                                <p class="page-header-text mb-5">Join the #UnitedApart movement with us</p>
+          <div class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+                <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
+                  <h2 class="subheading">Join the #TheGreatIndoors with us. </h2>
+                  <h1 class="mb-4 mb-md-0">#TheGreatIndoors</h1>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div class="text">
+                        <p>We believe in the power of helping. All of us are here to help each other. We are happy to talk to you about all your business questions during this difficult time or to just be a friend when you feel disconnected. When you join, you’ll get instant access to everyone’s calendars and be able to schedule a call with whoever you feel will help you. These calls are absolutely free and there are no strings attached. If you would like to give calls please join and add your calendar link.  </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            // <header class="page-header page-header-dark bg-gradient-primary-to-secondary">
+            //     <div class="page-header-content pt-10">
+            //       <Container>
+            //         <Row>
+            //                 <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+            //                     <h1 class="page-header-title">#UnitedApart</h1>
+            //                     <p class="page-header-text mb-5">Join the #UnitedApart movement with us</p>
                                 
 
-                                <div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
-                                  <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="/register">Schedule a Free Call</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 d-lg-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
-                              <img 
-                              alt="" 
-                              title="" 
-                              srcSet={hero_image} 
-                            />
-                            </div>
-                    </Row>
-                  </Container>
-                </div>
-            </header>
+            //                     <div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
+            //                       <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="/register">Schedule a Free Call</a>
+            //                     </div>
+            //                 </div>
+            //                 <div class="col-lg-6 d-lg-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+            //                   <img 
+            //                   alt="" 
+            //                   title="" 
+            //                   srcSet={hero_image} 
+            //                 />
+            //                 </div>
+            //         </Row>
+            //       </Container>
+            //     </div>
+            // </header>
 
 
           // <Container>

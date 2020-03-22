@@ -50,7 +50,25 @@
 
 /* Post feed */
 .post-feed {
+  padding: 100px 0;
   margin-bottom: 4vw;
+
+  .heading-section {
+    padding-bottom: 25px;
+  }
+
+  h2 {
+    color: #333;
+    margin-bottom: 0px!important;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+  }
 }
 
 .post-card {
