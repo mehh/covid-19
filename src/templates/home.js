@@ -30,7 +30,7 @@ export default class Home extends React.Component {
                   </Row>
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
-                        <div class="col-md-6 col-xl-4 mb-5">
+                        <div class="col-md-6 col-xl-3 mb-5">
                           <a class="card post-preview lift h-100" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
                             <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
                             <div class="card-body">
