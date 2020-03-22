@@ -385,9 +385,15 @@ collections:
         label: Subtitle
         required: false
         hint: The text shown just below the post title.
-      - widget: date
-        name: date
-        label: Date
+      - widget: string
+        name: link_out
+        label: Link Out
+        required: true
+        hint: The external link
+      - widget: list
+        name: tags
+        label: Tags
+        allow_add: true
         required: true
       - widget: image
         name: thumb_img_path
