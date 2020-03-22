@@ -30,27 +30,29 @@ export default class Home extends React.Component {
                   </Row>
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
-                      <article key={post_idx} className="post post-card" data-tags={_.get(post, 'frontmatter.tags')}>
-                        <div className="post-card-inside">
-                          {_.get(post, 'frontmatter.thumb_img_path') && 
-                          <Link className="post-card-thumbnail" to={safePrefix(_.get(post, 'url'))}>
-                            <img className="thumbnail" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
-                          </Link>
-                          }
-                          <div className="post-card-content">
-                            <header className="post-header">
-                              <h2 className="post-title"><Link to={safePrefix(_.get(post, 'url'))} rel="bookmark">{_.get(post, 'frontmatter.title')}</Link></h2>
-                              <h3 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h3>
-                            </header>
-                            <div className="post-excerpt">
-                              <p>{_.get(post, 'frontmatter.excerpt')}</p>
+                        <div class="col-md-6 col-xl-4 mb-5">
+                          <a class="card post-preview lift h-100" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
+                            <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
+                            <div class="card-body">
+                              <h3 class="card-title">{_.get(post, 'frontmatter.title')}</h3>
+                              <h4 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h4>
+                              <p class="card-text">{_.get(post, 'frontmatter.excerpt')}</p>
                             </div>
-                            <div className="read-more">
-                                <Link className="button inverse" to={safePrefix(_.get(post, 'url'))}>Read more</Link>
+                            <div class="card-footer">
+                              <div class="post-preview-meta">
+                                {/* <img class="post-preview-meta-img" src="https://source.unsplash.com/vTL_qy03D1I/100x100"> */}
+                                {/* <div class="post-preview-meta-details">
+                                  <div class="post-preview-meta-details-name">Aariz Fischer</div>
+                                  <div class="post-preview-meta-details-date">Feb 4 · 5 min read</div>
+                                </div> */}
+                                <div className="read-more">
+                                  <a className="button inverse" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>Read more</a>
+                                </div>                                
                               </div>
-                          </div>
+                            </div>
+                          </a>
                         </div>
-                      </article>
+
                       ))}
                   </Row>
                 </Container>

@@ -3,12 +3,13 @@ import _ from 'lodash';
 
 import {htmlToReact, Link} from '../utils';
 import Social from './Social';
+import Container from 'react-bootstrap/Container';
 
 export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer">
-              <div className="inner">
+              <Container>
                 <div className="site-footer-inside">
                   <p className="site-info">
                     {htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content'))}
@@ -21,7 +22,7 @@ export default class Footer extends React.Component {
                     <Social {...this.props} />
                   }
                 </div>
-              </div>
+                </Container>
             </footer>
         );
     }
