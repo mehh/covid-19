@@ -3,6 +3,27 @@ module.exports = {
     siteMetadata: require('./site-metadata.json'),
     plugins: [
         `gatsby-plugin-sass`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [
+                `gatsby-remark-relative-images`,
+                /* {
+                  resolve: `gatsby-plugin-netlify-cms-paths`,
+                  options: {
+                    cmsConfig: `/static/admin/config.yml`,
+                  },
+                }, */
+                {
+                  resolve: `gatsby-remark-images`,
+                  options: {
+                    maxWidth: 1500,
+                    backgroundColor: 'transparent', // required to display blurred image first
+                  },
+                },
+              ]}
+        },
+        `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,

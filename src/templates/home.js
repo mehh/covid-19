@@ -39,19 +39,15 @@ export default class Home extends React.Component {
                           }
                           <div className="post-card-content">
                             <header className="post-header">
-                              <div className="post-meta">
-                                <time className="published"
-                                dateTime={moment(_.get(post, 'frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date')).strftime('%B %d, %Y')}</time>
-                              </div>
                               <h2 className="post-title"><Link to={safePrefix(_.get(post, 'url'))} rel="bookmark">{_.get(post, 'frontmatter.title')}</Link></h2>
                               <h3 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h3>
                             </header>
                             <div className="post-excerpt">
                               <p>{_.get(post, 'frontmatter.excerpt')}</p>
-                              <p className="read-more">
-                                <Link className="button inverse" to={safePrefix(_.get(post, 'url'))}>Read more</Link>
-                              </p>
                             </div>
+                            <div className="read-more">
+                                <Link className="button inverse" to={safePrefix(_.get(post, 'url'))}>Read more</Link>
+                              </div>
                           </div>
                         </div>
                       </article>

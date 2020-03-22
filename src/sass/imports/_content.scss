@@ -22,6 +22,7 @@
 .post-title {
   font-size: 1.1rem;
   margin: 0 0 1.1rem;
+  min-height: 50px;
 
   a {
     border: 0;
@@ -34,9 +35,10 @@
 }
 
 .post-subtitle {
-  font-size: 1.33333rem;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  min-height: 50px;
 }
 
 .post-thumbnail {
@@ -52,6 +54,17 @@
 .post-feed {
   padding: 100px 0;
   margin-bottom: 4vw;
+
+  @media (min-width: 1200px){
+    .container {
+        max-width: 1400px;
+    }
+  }
+
+  .read-more {
+    margin: 0 auto;
+    text-align: center;
+  }
 
   .heading-section {
     padding-bottom: 25px;
@@ -90,6 +103,7 @@
 
   .post-excerpt {
     font-size: 12px;
+    min-height: 100px;
   }
 }
 
@@ -109,6 +123,7 @@
   border-radius: 3px 3px 0 0;
   display: block;
   margin: 0;
+  min-height: 150px;
 
   img {
     border-radius: 3px 3px 0 0;
@@ -117,7 +132,7 @@
 }
 
 .post-card-content {
-  padding: 1.33333rem 1.66667rem 0.33333rem;
+  padding: 1.33333rem 1.66667rem 1.33333rem;
 }
 
 @media only screen and (min-width: 681px) {
