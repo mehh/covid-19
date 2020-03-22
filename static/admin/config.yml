@@ -393,17 +393,17 @@ collections:
       - widget: select
         name: tags
         label: Tags
-          multiple: true
-          options: 
-            - { label: "Cooking & Recipes", value: "cooking_and_recipes" }
-            - { label: "Food & Wine ", value: "food_and_wine" }
-            - { label: "Entertainment", value: "entertainment" }
-            - { label: "Learning", value: "learning" }
-            - { label: "Kids", value: "kids" }
-            - { label: "Discounts & Offers", value: "discounts_and_offers" }
-            - { label: "Health & Fitness", value: "health_and_fitness" }
-            - { label: "Services", value: "services" }
-          default: ["Services"]
+        multiple: true
+        options: 
+          - { label: "Cooking & Recipes", value: "cooking_and_recipes" }
+          - { label: "Food & Wine ", value: "food_and_wine" }
+          - { label: "Entertainment", value: "entertainment" }
+          - { label: "Learning", value: "learning" }
+          - { label: "Kids", value: "kids" }
+          - { label: "Discounts & Offers", value: "discounts_and_offers" }
+          - { label: "Health & Fitness", value: "health_and_fitness" }
+          - { label: "Services", value: "services" }
+        default: ["Services"]
         required: true
       - widget: image
         name: thumb_img_path
