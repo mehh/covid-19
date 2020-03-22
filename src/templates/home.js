@@ -1,15 +1,28 @@
 import React from 'react';
 import _ from 'lodash';
-import moment from 'moment-strftime';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 import components, {Layout} from '../components/index';
 import {getPages, Link, safePrefix} from '../utils';
 
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 
 export default class Home extends React.Component {
+    componentDidMount() {
+      this.aos = AOS;
+      console.log('going to init');
+      this.aos.init({
+      });
+      console.log('inittted');
+    }
+    componentDidUpdate() {
+      this.aos.refresh();
+      console.log('refresh');
+    }
+
     render() {
         let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
         return (
@@ -30,8 +43,17 @@ export default class Home extends React.Component {
                   </Row>
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
-                        <div class="col-md-6 col-xl-3 mb-5">
-                          <a class="card post-preview lift h-100" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
+                        <div class="col-md-6 col-xl-3 mb-5 aos-init aos-animate"
+                        data-aos="fade-up"
+                        data-aos-offset="0"
+                        data-aos-delay="0"
+                        data-aos-duration="500"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        >
+                          <a class="card post-preview lift h-100" rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
                             <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
                             <div class="card-body">
                               <h3 class="card-title">{_.get(post, 'frontmatter.title')}</h3>
@@ -46,7 +68,7 @@ export default class Home extends React.Component {
                                   <div class="post-preview-meta-details-date">Feb 4 · 5 min read</div>
                                 </div> */}
                                 <div className="read-more">
-                                  <a className="button inverse" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>Read more</a>
+                                  <a className="button inverse" rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>Read more</a>
                                 </div>                                
                               </div>
                             </div>
