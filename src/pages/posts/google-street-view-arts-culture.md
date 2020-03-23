@@ -4,8 +4,8 @@ subtitle: Tour famous sites and landmarks online
 link_out: 'https://artsandculture.google.com/project/street-view'
 tags:
   - entertainment
-thumb_img_path: /images/screen-shot-2020-03-21-at-7.33.59-pm.png
-content_img_path: /images/screen-shot-2020-03-21-at-7.33.59-pm.png
+thumb_img_path: /images/streetview.png
+content_img_path: /images/streetview.png
 excerpt: 'Tour museums, monuments, and more online'
 date: 2020-03-22T03:22:55.236Z
 template: post
