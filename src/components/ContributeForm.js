@@ -3,7 +3,7 @@ import React from 'react';
 export default class ContributeForm extends React.Component {
     render() {
         return (
-          <form className="subscribe-form" name="Contributions" method="POST" data-netlify="true">
+          <form className="subscribe-form" netlifyHoneypot="bot-field-contribute" name="Contributions" method="POST" data-netlify="true"  id="Contribute">
             <p>
                 <label>
                   <span className="screen-reader-text">Your Name:</span>
@@ -22,6 +22,9 @@ export default class ContributeForm extends React.Component {
                   <textarea rows="4" cols="50" placeholder="Your Message" name="message"></textarea>
                 </label>
             </p>
+            <div className="screen-reader-text">
+                <label>Don't fill this out if you're human: <input name="bot-field-contribute" /></label>
+            </div>
             <p>
               <button type="submit">Send</button>
             </p>
