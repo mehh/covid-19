@@ -22,8 +22,8 @@ module.exports = {
         {
           resolve: `gatsby-plugin-manifest`,
           options: {
-            name: "Stay Home | Stay Safe",
-            short_name: "Stay Home | Stay Safe",
+            name: "Stay Home | Stay Sane",
+            short_name: "Stay Home | Stay Sane",
             start_url: "/",
             background_color: "#c17e09",
             theme_color: "#c17e09",
@@ -36,7 +36,7 @@ module.exports = {
           options: {
             trackingId: "UA-26065780-33",
             // Defines where to place the tracking script - `true` in the head and `false` in the body
-            head: false,
+            head: true,
             // Setting this parameter is optional
             anonymize: false,
             // Setting this parameter is also optional
