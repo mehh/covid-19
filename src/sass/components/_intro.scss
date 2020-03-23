@@ -35,6 +35,25 @@
     }
   }
   
+  .card-tags {
+    padding-bottom: 10px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      width: max-content;
+      list-style: none;
+
+      li {
+        list-style: none;
+        background: #f6d365;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 10px;
+      }
+    }
+  }
+
   .slider-text {
     .text {
       position: relative;
@@ -51,7 +70,7 @@
         color: #ffd369;
       }
     }
-  
+
     .subheading {
       font-size: 18px;
       color: #fff;

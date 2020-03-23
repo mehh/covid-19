@@ -3,12 +3,13 @@ import _ from 'lodash';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-
+import Tags from '../components/Tags'
 import components, {Layout} from '../components/index';
 import {getPages, Link, safePrefix} from '../utils';
 
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+
 
 export default class Home extends React.Component {
     componentDidMount() {
@@ -82,7 +83,7 @@ export default class Home extends React.Component {
                   </Row> */}
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
-                        <div class="col-md-6 col-xl-3 mb-5 aos-init aos-animate" 
+                        <div class="col-md-6 col-xl-3 mb-5" 
                         data-tags={_.get(post, 'frontmatter.tags')}
 
                         data-aos="fade-up"
@@ -97,9 +98,7 @@ export default class Home extends React.Component {
                           <a class="card post-preview lift h-100"  rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
                             <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
                             <div class="card-body">
-                              {/* <div class="card-tags">
-                                {_.get(post, 'frontmatter.tags')}
-                              </div> */}
+                              <Tags tags={_.get(post, 'frontmatter.tags')} />
                               <h3 class="card-title">{_.get(post, 'frontmatter.title')}</h3>
                               <h4 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h4>
                               <p class="card-text">{_.get(post, 'frontmatter.excerpt')}</p>
