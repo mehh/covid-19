@@ -97,9 +97,9 @@ export default class Home extends React.Component {
                           <a class="card post-preview lift h-100"  rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
                             <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
                             <div class="card-body">
-                              <div class="card-tags">
+                              {/* <div class="card-tags">
                                 {_.get(post, 'frontmatter.tags')}
-                              </div>
+                              </div> */}
                               <h3 class="card-title">{_.get(post, 'frontmatter.title')}</h3>
                               <h4 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h4>
                               <p class="card-text">{_.get(post, 'frontmatter.excerpt')}</p>

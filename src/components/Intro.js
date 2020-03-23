@@ -22,7 +22,9 @@ export default class Intro extends React.Component {
                   <div class="row">
                     <div class="col-md-7">
                       <div class="text">
-                        <p>We believe in the power of helping. All of us are here to help each other. We are happy to talk to you about all your business questions during this difficult time or to just be a friend when you feel disconnected. When you join, you’ll get instant access to everyone’s calendars and be able to schedule a call with whoever you feel will help you. These calls are absolutely free and there are no strings attached. If you would like to give calls please join and add your calendar link.  </p>
+                        <p>We believe in the power of helping. All of us are here to help each other. 
+                           We've put together a list of all the wonderful, free things you can do remotely.
+                           </p>
                       </div>
                     </div>
                   </div>
