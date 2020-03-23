@@ -1,14 +1,14 @@
 {
-  "title": "UnitedApart",
+  "title": "#StayHomeStaySane",
   "layout_style": "grid",
   "palette": "black",
   "header": {
-    "title": "UnitedApart",
+    "title": "#StayHomeStaySane",
     "logo_img": "images/logo.png",
     "has_nav": true
   },
   "footer": {
-    "content": "&copy; All rights reserved.",
+    "content": "&copy; All rights reserved. #StayHomeStaySane",
     "links": [
       {
         "text": "Made with ❤️",
