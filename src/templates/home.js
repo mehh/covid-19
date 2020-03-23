@@ -85,15 +85,6 @@ export default class Home extends React.Component {
                       {_.map(display_posts, (post, post_idx) => (
                         <div class="col-md-6 col-xl-3 mb-5" 
                         data-tags={_.get(post, 'frontmatter.tags')}
-
-                        data-aos="fade-up"
-                        data-aos-offset="0"
-                        data-aos-delay="0"
-                        data-aos-duration="500"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="false"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
                         >
                           <a class="card post-preview lift h-100"  rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
                             <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
