@@ -26,6 +26,7 @@ export default class ContributeForm extends React.Component {
                 <label>Don't fill this out if you're human: <input name="bot-field-contribute" /></label>
             </div>
             <p>
+              <input type="hidden" name="form-name" value="Contributions" />
               <button type="submit">Send</button>
             </p>
           </form>
