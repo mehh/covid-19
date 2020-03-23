@@ -1,6 +1,6 @@
 ---
 title: Antoni Porowski on Instagram
-subtitle: 'Quar Eye: Cooking Lessons in Quarantine'
+subtitle: 'Queer Eye: Cooking Lessons in Quarantine'
 link_out: 'https://www.instagram.com/antoni/'
 tags:
   - cooking_and_recipes
