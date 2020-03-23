@@ -17,8 +17,8 @@ export default class Intro extends React.Component {
             <div class="container">
               <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
                 <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
-                  <h2 class="subheading">Join the #TheGreatIndoors with us. </h2>
-                  <h1 class="mb-4 mb-md-0">#TheGreatIndoors</h1>
+                  <h2 class="subheading">#StayHomeStaySane with us. </h2>
+                  <h1 class="mb-4 mb-md-0">#StayHomeStaySane</h1>
                   <div class="row">
                     <div class="col-md-7">
                       <div class="text">

@@ -13,18 +13,43 @@ import Container from 'react-bootstrap/Container';
 export default class Home extends React.Component {
     componentDidMount() {
       this.aos = AOS;
-      console.log('going to init');
       this.aos.init({
       });
-      console.log('inittted');
     }
     componentDidUpdate() {
       this.aos.refresh();
-      console.log('refresh');
     }
+
+    handleClick = (e) => {
+      console.log('Meow');
+      var saverElement = document.getElementById('saver');
+      console.log(e);
+      
+      // e.classList.toggle( "active" );
+      
+      return;
+      // var tagKey = this.dataset.key;
+
+      if(this.classList.contains('active')){
+        this.classList.add('inactive');
+        this.classList.remove('active');
+      } else {
+        this.classList.add('active');
+        this.classList.remove('inactive');
+      }
+
+      var elements = document.querySelectorAll('[data-tags]');
+      elements.forEach(element => {
+        console.log(element);
+        // elements.item(0).classList.add('hidden');
+      });
+      
+    };
 
     render() {
         let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
+        // document.getElementById('tags').addEventListener('click', tagCheck, false);
+
         return (
             <Layout {...this.props}>
               {_.map(_.get(this.props, 'pageContext.frontmatter.sections'), (section, section_idx) => {
@@ -35,15 +60,31 @@ export default class Home extends React.Component {
               })}
               <div className="post-feed">
                 <Container>
-                  <Row>
-                    <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                <Row>
+                    <div class="col-md-12 heading-section ">
                       <h2 class="mb-4">View the Offers</h2>
                       <p>Discover all these wonderful offers during this time.</p>
                     </div>
                   </Row>
+                  {/* <Row>
+                    <div class="col-md-12 tags" id="tags">
+                      <ul>
+                        <li onClick={this.handleClick} data-key="cooking_and_recipes" class=""> Cooking & Recipes</li>
+                        <li onClick={this.handleClick} data-key="food_and_wine" class=""> Food & Wine </li>
+                        <li onClick={this.handleClick} data-key="entertainment" class=""> Entertainment</li>
+                        <li onClick={this.handleClick} data-key="learning" class=""> Learning</li>
+                        <li onClick={this.handleClick} data-key="kids" class=""> Kids</li>
+                        <li onClick={this.handleClick} data-key="discounts_and_offers" class=""> Discounts & Offers</li>
+                        <li onClick={this.handleClick} data-key="health_and_fitness" class=""> Health & Fitness</li>
+                        <li onClick={this.handleClick} data-key="services" class=""> Services</li>
+                      </ul>
+                    </div>
+                  </Row> */}
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
-                        <div class="col-md-6 col-xl-3 mb-5 aos-init aos-animate"
+                        <div class="col-md-6 col-xl-3 mb-5 aos-init aos-animate" 
+                        data-tags={_.get(post, 'frontmatter.tags')}
+
                         data-aos="fade-up"
                         data-aos-offset="0"
                         data-aos-delay="0"
@@ -53,9 +94,12 @@ export default class Home extends React.Component {
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center"
                         >
-                          <a class="card post-preview lift h-100" rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
+                          <a class="card post-preview lift h-100"  rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>
                             <img class="card-img-top" src={safePrefix(_.get(post, 'frontmatter.thumb_img_path'))} alt={_.get(post, 'frontmatter.title')} />
                             <div class="card-body">
+                              <div class="card-tags">
+                                {_.get(post, 'frontmatter.tags')}
+                              </div>
                               <h3 class="card-title">{_.get(post, 'frontmatter.title')}</h3>
                               <h4 className="post-subtitle">{_.get(post, 'frontmatter.subtitle')}</h4>
                               <p class="card-text">{_.get(post, 'frontmatter.excerpt')}</p>

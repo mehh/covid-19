@@ -20,6 +20,32 @@ module.exports = {
             }
         },
         {
+          resolve: `gatsby-plugin-manifest`,
+          options: {
+            name: "Stay Home | Stay Safe",
+            short_name: "Stay Home | Stay Safe",
+            start_url: "/",
+            background_color: "#c17e09",
+            theme_color: "#c17e09",
+            display: "standalone",
+            // icon: "src/images/favicon.png" // This path is relative to the root of the site.
+          }
+        },
+        {
+          resolve: `gatsby-plugin-google-analytics`,
+          options: {
+            trackingId: "UA-26065780-33",
+            // Defines where to place the tracking script - `true` in the head and `false` in the body
+            head: false,
+            // Setting this parameter is optional
+            anonymize: false,
+            // Setting this parameter is also optional
+            respectDNT: false,
+            // Delays sending pageview hits on route update (in milliseconds)
+            pageTransitionDelay: 0,
+          }
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
               plugins: [

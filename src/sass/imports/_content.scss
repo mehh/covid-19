@@ -73,3 +73,19 @@
     }
   }
 }
+
+#tags {
+  ul {
+    li {
+      color:#FFF;
+      padding: 10px 5px;
+      width: 200px;
+
+      &.inactive {
+        background-color: red;
+      }
+
+      background-color: #bada55;
+    }
+  }
+}
