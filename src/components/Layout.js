@@ -5,6 +5,7 @@ import _ from 'lodash';
 import {safePrefix} from '../utils';
 import Header from './Header';
 import Subscribe from './Subscribe';
+import Contribute from './Contribute';
 import Footer from './Footer';
 
 export default class Body extends React.Component {
@@ -39,6 +40,7 @@ export default class Body extends React.Component {
                     {_.get(this.props, 'pageContext.site.data.subscribe.enabled') && 
                       <Subscribe {...this.props} />
                     }
+                    <Contribute />
                     <Footer {...this.props} />
                   </div>
             </React.Fragment>

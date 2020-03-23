@@ -3,7 +3,17 @@
  * ----------------------------------------------------------------------------
  */
 .subscribe {
-  background: _palette(bg);
+  background: #0085e4;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #0085e4), color-stop(100%, #c17e09));
+  background: linear-gradient(45deg, #0085e4 0%, #c17e09 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0085e4',endColorstr='#c17e09',GradientType=1 );
+  
+  &.contribute {
+      background: #0085e4;
+      background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%) !important;
+  }
+  
+  color: #FFF;  
   border-bottom: 1px solid _palette(border);
   padding-bottom: 2.5em;
   padding-top: 2.5em;

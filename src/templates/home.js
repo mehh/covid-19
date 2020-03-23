@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 import Tags from '../components/Tags'
+import Filter from '../components/Filter'
 import components, {Layout} from '../components/index';
 import {getPages, Link, safePrefix} from '../utils';
 
@@ -20,32 +21,6 @@ export default class Home extends React.Component {
     componentDidUpdate() {
       this.aos.refresh();
     }
-
-    handleClick = (e) => {
-      console.log('Meow');
-      var saverElement = document.getElementById('saver');
-      console.log(e);
-      
-      // e.classList.toggle( "active" );
-      
-      return;
-      // var tagKey = this.dataset.key;
-
-      if(this.classList.contains('active')){
-        this.classList.add('inactive');
-        this.classList.remove('active');
-      } else {
-        this.classList.add('active');
-        this.classList.remove('inactive');
-      }
-
-      var elements = document.querySelectorAll('[data-tags]');
-      elements.forEach(element => {
-        console.log(element);
-        // elements.item(0).classList.add('hidden');
-      });
-      
-    };
 
     render() {
         let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
@@ -67,20 +42,7 @@ export default class Home extends React.Component {
                       <p>Discover all these wonderful offers during this time.</p>
                     </div>
                   </Row>
-                  {/* <Row>
-                    <div class="col-md-12 tags" id="tags">
-                      <ul>
-                        <li onClick={this.handleClick} data-key="cooking_and_recipes" class=""> Cooking & Recipes</li>
-                        <li onClick={this.handleClick} data-key="food_and_wine" class=""> Food & Wine </li>
-                        <li onClick={this.handleClick} data-key="entertainment" class=""> Entertainment</li>
-                        <li onClick={this.handleClick} data-key="learning" class=""> Learning</li>
-                        <li onClick={this.handleClick} data-key="kids" class=""> Kids</li>
-                        <li onClick={this.handleClick} data-key="discounts_and_offers" class=""> Discounts & Offers</li>
-                        <li onClick={this.handleClick} data-key="health_and_fitness" class=""> Health & Fitness</li>
-                        <li onClick={this.handleClick} data-key="services" class=""> Services</li>
-                      </ul>
-                    </div>
-                  </Row> */}
+                  <Filter />
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
                         <div class="col-md-6 col-xl-3 mb-5" 
