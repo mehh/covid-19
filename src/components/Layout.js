@@ -7,6 +7,7 @@ import Header from './Header';
 import Subscribe from './Subscribe';
 import Contribute from './Contribute';
 import Footer from './Footer';
+import home_happy from '../images/home_happy.jpg';
 
 export default class Body extends React.Component {
     render() {
@@ -35,7 +36,7 @@ export default class Body extends React.Component {
                     <meta property="og:title" content="#StayHomeStaySane" />
                     <meta property="og:type" content="website" />
                     <meta property="og:description" content="StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it." />              
-                    <meta property="og:image" content="https://stayhomestaysane.com/images/home_happy.jpg" />
+                    <meta property="og:image" content={home_happy} />
 
                     
                     <meta name="twitter:site" content="https://stayhomestaysane.com" />
