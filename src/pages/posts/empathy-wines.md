@@ -3,7 +3,6 @@ title: Empathy Wines
 subtitle: Free shipping on ethical wine delivered straight to your home
 link_out: 'https://empathywines.com/'
 tags:
-  - food_and_wine
   - discounts_and_offers
 thumb_img_path: /images/empathywines.png
 content_img_path: /images/empathywines.png
