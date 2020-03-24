@@ -3,7 +3,7 @@ title: Met Opera
 subtitle: Free nightly streaming events
 link_out: 'https://www.metopera.org/user-information/nightly-met-opera-streams/'
 tags:
-  - entertainment
+  - be_entertained
 thumb_img_path: /images/metopera.png
 content_img_path: /images/metopera.png
 excerpt: >-
