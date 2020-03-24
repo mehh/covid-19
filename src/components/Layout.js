@@ -28,7 +28,14 @@ export default class Body extends React.Component {
                         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
                         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
                         crossorigin="anonymous"
-                    />                    
+                    />      
+
+                    <meta property="og:site_name" content="#StayHomeStaySane">
+                    <meta property="og:url" content="https://stayhomestaysane.com">
+                    <meta property="og:title" content="#StayHomeStaySane">
+                    <meta property="og:type" content="website">
+                    <meta property="og:description" content="StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it.">              
+                    <meta property="og:image" content="https://stayhomestaysane.com/images/home_happy.jpg" />
                 </Helmet>
                   <div id="page" className={'site layout-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style') + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette')}>
                     <Header {...this.props} />
