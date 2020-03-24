@@ -4,7 +4,7 @@
   "palette": "black",
   "header": {
     "title": "#StayHomeStaySane",
-    "logo_img": "images/logo.png",
+    "logo_img": "/images/logo.png",
     "has_nav": true
   },
   "footer": {
