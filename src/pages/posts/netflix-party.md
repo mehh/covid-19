@@ -3,8 +3,7 @@ title: Netflix Party
 subtitle: A new way to watch Netflix together
 link_out: 'https://www.netflixparty.com/'
 tags:
-  - entertainment
-  - kids
+  - be_entertained
 thumb_img_path: /images/netflixparty.png
 content_img_path: /images/netflixparty.png
 excerpt: >-
