@@ -3,7 +3,7 @@ title: LinkedIn Learning (Previously Lynda)
 subtitle: One month of free courses
 link_out: 'https://www.linkedin.com/learning'
 tags:
-  - learning
+  - learn_up
 thumb_img_path: /images/linkedin-learning.png
 content_img_path: /images/linkedin-learning.png
 excerpt: >-
