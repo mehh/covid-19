@@ -36,12 +36,6 @@ export default class Home extends React.Component {
               })}
               <div className="post-feed">
                 <Container>
-                <Row>
-                    <div class="col-md-12 heading-section ">
-                      <h2 class="mb-4">View the Offers</h2>
-                      <p>Discover all these wonderful offers during this time.</p>
-                    </div>
-                  </Row>
                   <Filter />
                   <Row>
                       {_.map(display_posts, (post, post_idx) => (
@@ -58,13 +52,8 @@ export default class Home extends React.Component {
                             </div>
                             <div class="card-footer">
                               <div class="post-preview-meta">
-                                {/* <img class="post-preview-meta-img" src="https://source.unsplash.com/vTL_qy03D1I/100x100"> */}
-                                {/* <div class="post-preview-meta-details">
-                                  <div class="post-preview-meta-details-name">Aariz Fischer</div>
-                                  <div class="post-preview-meta-details-date">Feb 4 · 5 min read</div>
-                                </div> */}
                                 <div className="read-more">
-                                  <a className="button inverse" rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>Read more</a>
+                                  <a className="button inverse" rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(post, 'frontmatter.link_out'))}>Learn More</a>
                                 </div>                                
                               </div>
                             </div>

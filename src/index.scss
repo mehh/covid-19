@@ -1,8 +1,8 @@
 
 // Font.
 $font: (
-  primary: ("Poppins", sans-serif),
-  secondary: ("Poppins", sans-serif)
+  primary: ("Inter", sans-serif),
+  secondary: ("Inter", sans-serif)
 );
 
 // Palette.
@@ -20,11 +20,11 @@ $palette: (
 );
 
 @import "sass/imports/functions";
+@import "fonts/inter.css";
 
 // @import "sass/fontawesome.min.css";
 // @import "sass/brands.min.css";
 // @import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 @import "sass/imports/reset";
 @import "sass/imports/general";
@@ -35,5 +35,7 @@ $palette: (
 @import "sass/imports/subscribe";
 @import "sass/imports/footer";
 @import "sass/imports/palettes";
+@import "sass/imports/forms";
 
 @import "sass/components/intro";
+@import "sass/components/card";

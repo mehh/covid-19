@@ -34,7 +34,7 @@ function ParseTags(props) {
     var tags = props.tags;
     
     tags.forEach(tag => {
-        console.log('here: '+tag);
+        // console.log('here: '+tag);
  
         if(tag && tag !== undefined){
             if(tag === 'cooking_and_recipes'){

@@ -31,7 +31,7 @@ function ParseTags(props) {
     var tags = props.tags;
     
     tags.forEach(tag => {
-        console.log('here: '+tag);
+        // console.log('here: '+tag);
  
         if(tag && tag !== undefined){
             if(tag === 'cooking_and_recipes'){
@@ -75,10 +75,8 @@ function ParseTags(props) {
 export default class Tags extends React.Component {
   render() {
     return (
-        <div class="card-tags">
-            <strong>
-                <ParseTags tags={this.props.tags} />
-            </strong>
+        <div class="card-tags"> 
+            <ParseTags tags={this.props.tags} />
         </div>
     );
   }
