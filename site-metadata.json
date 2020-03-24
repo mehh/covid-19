@@ -5,7 +5,7 @@
   "header": {
     "title": "#StayHomeStaySane",
     "logo_img": "/images/logo.png",
-    "has_nav": true
+    "has_nav": false
   },
   "footer": {
     "content": "&copy; All rights reserved. #StayHomeStaySane",
