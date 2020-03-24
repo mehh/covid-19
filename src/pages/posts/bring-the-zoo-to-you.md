@@ -3,9 +3,7 @@ title: Bring The Zoo To You
 subtitle: Brookfield Zoo Brings The Zoo To You With Facebook Live Chats
 link_out: 'https://www.czs.org/BringTheZooToYou'
 tags:
-  - kids
-  - entertainment
-  - learning
+  - for_the_kids
 thumb_img_path: /images/screen-shot-2020-03-23-at-2.56.45-pm.png
 content_img_path: /images/screen-shot-2020-03-23-at-2.56.45-pm.png
 excerpt: >-
