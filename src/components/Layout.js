@@ -9,6 +9,8 @@ import Contribute from './Contribute';
 import Footer from './Footer';
 import home_happy from '../images/home_happy.jpg';
 
+var home_happy_url = 'https://stayhomestaysane.com'+home_happy;
+
 export default class Body extends React.Component {
     render() {
         return (
@@ -36,7 +38,7 @@ export default class Body extends React.Component {
                     <meta property="og:title" content="#StayHomeStaySane" />
                     <meta property="og:type" content="website" />
                     <meta property="og:description" content="StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it." />              
-                    <meta property="og:image" content={home_happy} />
+                    <meta property="og:image" content={home_happy_url} />
 
                     
                     <meta name="twitter:site" content="https://stayhomestaysane.com" />
