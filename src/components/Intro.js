@@ -22,9 +22,15 @@ export default class Intro extends React.Component {
                   <div class="row">
                     <div class="col-md-7">
                       <div class="text">
-                        <p>We believe in the power of helping. All of us are here to help each other. 
-                           We've put together a list of all the wonderful, free things you can do remotely.
-                           </p>
+                        <p>
+                          There are so many great options for entertainment, delivery, and trying new things as we learn how to stay home while staying sane. 
+                        </p>
+                        <p>
+                          From exploring museums across the globe that you’ve always wanted to visit (FOR FREE!), to getting ethical wine delivered straight to your door, or even watching Antoni from Netflix’s Queer Eye teach us how to make chicken tenders–there’s something for everyone.
+                        </p>
+                        <p>
+                          StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it. 
+                        </p>
                       </div>
                     </div>
                   </div>

@@ -58,6 +58,39 @@ function ParseTags(props) {
             if(tag === 'services'){
                 string = 'Services'
             }
+            if(tag === 'chow_down') {
+                string = 'Chow Down'
+            }
+            if(tag === 'learn_up') {
+                string = 'Learn Up'
+            }
+            if(tag === 'workouts') {
+                string = 'Workouts'
+            }
+            if(tag === 'get_social') {
+                string = 'Get Social'
+            }
+            if(tag === 'be_entertained') {
+                string = 'Be Entertained'
+            }
+            if(tag === 'game_on') {
+                string = 'Game On'
+            }
+            if(tag === 'discounts_and_offers') {
+                string = 'Discounts & Offers'
+            }
+            if(tag === 'for_the_kids') {
+                string = 'For the Kids'
+            }
+            if(tag === 'helpful_services') {
+                string = 'Helpful Services'
+            }
+            if(tag === 'stay_healthy') {
+                string = 'Stay Healthy'
+            }
+            if(tag === 'get_cooking') {
+                string = 'Get Cooking'
+            }
         }
     });
 

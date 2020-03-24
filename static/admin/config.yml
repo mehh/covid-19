@@ -403,6 +403,17 @@ collections:
           - { label: "Discounts & Offers", value: "discounts_and_offers" }
           - { label: "Health & Fitness", value: "health_and_fitness" }
           - { label: "Services", value: "services" }
+          - { label: "Chow Down", value: "chow_down" }
+          - { label: "Learn Up", value: "learn_up" }
+          - { label: "Workouts", value: "workouts" }
+          - { label: "Get Social", value: "get_social" }
+          - { label: "Be Entertained", value: "be_entertained" }
+          - { label: "Game On", value: "game_on" }
+          - { label: "Discounts & Offers", value: "discounts_and_offers" }
+          - { label: "For the Kids", value: "for_the_kids" }
+          - { label: "Helpful Services", value: "helpful_services" }
+          - { label: "Stay Healthy", value: "stay_healthy" }
+          - { label: "Get Cooking", value: "get_cooking" }
         default: ["Services"]
         required: true
       - widget: image
