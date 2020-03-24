@@ -30,12 +30,18 @@ export default class Body extends React.Component {
                         crossorigin="anonymous"
                     />      
 
-                    <meta property="og:site_name" content="#StayHomeStaySane">
-                    <meta property="og:url" content="https://stayhomestaysane.com">
-                    <meta property="og:title" content="#StayHomeStaySane">
-                    <meta property="og:type" content="website">
-                    <meta property="og:description" content="StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it.">              
+                    <meta property="og:site_name" content="#StayHomeStaySane" />
+                    <meta property="og:url" content="https://stayhomestaysane.com" />
+                    <meta property="og:title" content="#StayHomeStaySane" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:description" content="StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it." />              
                     <meta property="og:image" content="https://stayhomestaysane.com/images/home_happy.jpg" />
+
+                    
+                    <meta name="twitter:site" content="https://stayhomestaysane.com" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content="#StayHomeStaySane" />
+                    <meta name="twitter:description" content="StayHomeStaySane is a collective of resources meant to encourage you to see the silver lining of spending more time indoors. There’s a whole world to be accessed online and we’re here to help you discover more of it." />
                 </Helmet>
                   <div id="page" className={'site layout-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style') + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette')}>
                     <Header {...this.props} />
