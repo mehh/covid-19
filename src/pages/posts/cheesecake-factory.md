@@ -3,8 +3,7 @@ title: Cheesecake Factory
 subtitle: 'Add a Free Slice to Your Online Pickup Order through 4/16 '
 link_out: 'https://order.thecheesecakefactory.com/?gclsrc=aw.ds&'
 tags:
-  - discounts_and_offers
-  - food_and_wine
+  - chow_down
 thumb_img_path: /images/cheesecakefactory.png
 content_img_path: /images/cheesecakefactory.png
 excerpt: >-
