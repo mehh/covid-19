@@ -4,8 +4,8 @@ subtitle: Quarantine recipes
 link_out: 'https://www.instagram.com/inagarten/'
 tags:
   - get_cooking
-thumb_img_path: /images/inagarten2.png
-content_img_path: /images/inagarten2.png
+thumb_img_path: /images/about_ina.jpg
+content_img_path: /images/about_ina.jpg
 excerpt: >-
   Recipes from pantry items and substitutions for specific ingredients (ie:
   granulated sugar vs brown sugar)
