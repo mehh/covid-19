@@ -3,21 +3,20 @@ import React from 'react';
 export default class SubscribeForm extends React.Component {
     render() {
         return (
-            <form name="subscribeForm" method="POST" netlifyHoneypot="bot-field" data-netlify="true" id="subscribe-form"
-              className="subscribe-form">
+          <form name="subscribeForm" class="form-inline subscribe" method="POST" netlifyHoneypot="bot-field" data-netlify="true" >
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Email</label>
+              <input type="email" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com" />
+            </div>
+            <div className="screen-reader-text">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+            <input type="hidden" name="form-name" value="subscribeForm" />
+            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+          </form>
 
-              <div className="form-row">
-                <label>
-                  <span className="screen-reader-text">Email address</span>
-                  <input className="subscribe-email" type="email" name="email" placeholder="Enter Email Address..."/>
-                </label>
-              </div>
-              <div className="screen-reader-text">
-                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-              </div>
-              <input type="hidden" name="form-name" value="subscribeForm" />
-              <button className="button" type="submit">Subscribe</button>
-            </form>
+
+
         );
     }
 }

@@ -9,11 +9,19 @@ export default class Subscribe extends React.Component {
         return (
             <section className="subscribe">
               <div className="inner">
-                <h2 className="subscribe-title">{_.get(this.props, 'pageContext.site.data.subscribe.title')}</h2>
-                <p className="subscribe-text">
-                  {htmlToReact(_.get(this.props, 'pageContext.site.data.subscribe.content'))}
-                </p>
-                <SubscribeForm {...this.props} />
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <h2 className="subscribe-title">{_.get(this.props, 'pageContext.site.data.subscribe.title')}</h2>
+                        <p className="subscribe-text">
+                          {htmlToReact(_.get(this.props, 'pageContext.site.data.subscribe.content'))}
+                        </p>
+                      </div>
+                      <div class="col-sm-7">
+                        <SubscribeForm {...this.props} />
+                      </div>
+                  </div>
+                </div>
               </div>
             </section>
         );
