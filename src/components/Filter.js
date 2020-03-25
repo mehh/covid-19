@@ -86,14 +86,50 @@ export default class Filters extends React.Component {
             <Row>
                 <div class="col-md-12 tags" id="tags">
                     <ul onClick={this.handleClick}>
-                        <li data-key="cooking_and_recipes" className="filter-button">Cooking & Recipes</li>
-                        <li data-key="chow_down" className="filter-button">Food & Wine </li>
-                        <li data-key="be_entertained" className="filter-button">Entertainment</li>
-                        <li data-key="learning" className="filter-button">Learning</li>
-                        <li data-key="for_the_kids" className="filter-button">Kids</li>
-                        <li data-key="discounts_and_offers" className="filter-button">Discounts & Offers</li>
-                        <li data-key="stay_healthy" className="filter-button">Health & Fitness</li>
-                        <li data-key="services" className="filter-button">Services</li>
+                        <li data-key="chow_down" className="filter-button">
+                            <div class="emoji">🍔</div>
+                            <div class="title">Chow Down</div>
+                        </li>
+                        <li data-key="learn_up" className="filter-button">
+                            <div class="emoji">🤓</div>
+                            <div class="title">Learn Up</div>
+                        </li>
+                        <li data-key="workouts" className="filter-button">
+                            <div class="emoji">💪</div>
+                            <div class="title">Workouts</div>
+                        </li>
+                        <li data-key="get_social" className="filter-button">
+                            <div class="emoji">📞</div>
+                            <div class="title">Get Social</div>
+                        </li>
+                        <li data-key="be_entertained" className="filter-button">
+                            <div class="emoji">🎥</div>
+                            <div class="title">Be Entertained</div>
+                        </li>
+                        <li data-key="game_on" className="filter-button">
+                            <div class="emoji">🎮</div>
+                            <div class="title">Game On</div>
+                        </li>
+                        <li data-key="discounts_and_offers" className="filter-button">
+                            <div class="emoji">💸</div>
+                            <div class="title">Discounts & Offers</div>
+                        </li>
+                        <li data-key="for_the_kids" className="filter-button">
+                            <div class="emoji">👪</div>
+                            <div class="title">For the Kids</div>
+                        </li>
+                        <li data-key="helpful_services" className="filter-button">
+                            <div class="emoji">🖥️</div>
+                            <div class="title">Helpful Services</div>
+                        </li>
+                        <li data-key="stay_healthy" className="filter-button">
+                            <div class="emoji">👧</div>
+                            <div class="title">Stay Healthy</div>
+                        </li>
+                        <li data-key="get_cooking" className="filter-button">
+                            <div class="emoji">🍳</div>
+                            <div class="title">Get Cooking</div>
+                        </li>
                     </ul>
                 </div>
             </Row>

@@ -108,7 +108,7 @@ function ParseTags(props) {
 export default class Tags extends React.Component {
   render() {
     return (
-        <div class="card-tags"> 
+        <div class="card-tags">
             <ParseTags tags={this.props.tags} />
         </div>
     );

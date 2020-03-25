@@ -1,0 +1,31 @@
+#tags {
+    ul {
+      list-style: none;
+      color: #000;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex: 1 0 21%; /* explanation below */
+        margin: 5px;
+        height: 100px;
+        background: #FFF;
+        border-radius: 10px;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+      }
+    }
+  }
+  
