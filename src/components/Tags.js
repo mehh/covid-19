@@ -34,30 +34,6 @@ function ParseTags(props) {
         // console.log('here: '+tag);
  
         if(tag && tag !== undefined){
-            if(tag === 'cooking_and_recipes'){
-                string = 'Cooking & Recipes'
-            }
-            if(tag === 'food_and_wine'){
-                string = 'Food & Wine '
-            }
-            if(tag === 'entertainment'){
-                string = 'Entertainment'
-            }
-            if(tag === 'learning'){
-                string = 'Learning'
-            }
-            if(tag === 'kids'){
-                string = 'Kids'
-            }
-            if(tag === 'discounts_and_offers'){
-                string = 'Discounts & Offers'
-            }
-            if(tag === 'health_and_fitness'){
-                string = 'Health & Fitness'
-            }
-            if(tag === 'services'){
-                string = 'Services'
-            }
             if(tag === 'chow_down') {
                 string = 'Chow Down'
             }

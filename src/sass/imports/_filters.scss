@@ -8,8 +8,9 @@
 
       li {
         flex: 1 0 21%; /* explanation below */
-        margin: 5px;
-        height: 100px;
+        margin: 20px;
+        padding: 35px;
+        // height: 100px;
         background: #FFF;
         border-radius: 10px;
         text-align: center;
@@ -25,6 +26,17 @@
         font-weight: normal;
         font-size: 15px;
         line-height: 21px;
+        position: relative;
+
+        .filter-button {
+          position: absolute;
+          width: 100%;
+
+        }
+        .emoji {
+          font-size: 30px;
+          padding: 25px;
+        }
       }
     }
   }
