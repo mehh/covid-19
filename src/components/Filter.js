@@ -52,22 +52,22 @@ export default class Filters extends React.Component {
                             <div class="emoji">🤓</div>
                             <div class="title">Learn Up</div>
                         </li>
-                        <li data-key="workouts" className="filter-button">
+                        {/* <li data-key="workouts" className="filter-button">
                             <div class="emoji">💪</div>
                             <div class="title">Workouts</div>
                         </li>
                         <li data-key="get_social" className="filter-button">
                             <div class="emoji">📞</div>
                             <div class="title">Get Social</div>
-                        </li>
+                        </li> */}
                         <li data-key="be_entertained" className="filter-button">
                             <div class="emoji">🎥</div>
                             <div class="title">Be Entertained</div>
                         </li>
-                        <li data-key="game_on" className="filter-button">
+                        {/* <li data-key="game_on" className="filter-button">
                             <div class="emoji">🎮</div>
                             <div class="title">Game On</div>
-                        </li>
+                        </li> */}
                         <li data-key="discounts_and_offers" className="filter-button">
                             <div class="emoji">💸</div>
                             <div class="title">Discounts & Offers</div>
@@ -76,10 +76,10 @@ export default class Filters extends React.Component {
                             <div class="emoji">👪</div>
                             <div class="title">For the Kids</div>
                         </li>
-                        <li data-key="helpful_services" className="filter-button">
+                        {/* <li data-key="helpful_services" className="filter-button">
                             <div class="emoji">🖥️</div>
                             <div class="title">Helpful Services</div>
-                        </li>
+                        </li> */}
                         <li data-key="stay_healthy" className="filter-button">
                             <div class="emoji">👧</div>
                             <div class="title">Stay Healthy</div>
