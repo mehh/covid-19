@@ -1,4 +1,12 @@
 #tags ul {
+  [data-key="ways_to_help"] {
+    &.active {
+      $color: #E31D1D;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
   [data-key="chow_down"] {
     &.active {
       $color: #E31D1D;
