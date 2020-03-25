@@ -6,7 +6,7 @@ export default class SubscribeForm extends React.Component {
           <form name="subscribeForm" class="form-inline subscribe" method="POST" netlifyHoneypot="bot-field" data-netlify="true" >
             <div class="form-group mb-2">
               <label for="staticEmail2" class="sr-only">Email</label>
-              <input type="email" class="form-control" id="staticEmail2" placeholder="email@example.com" />
+              <input name="Email Address" type="email" class="form-control" id="staticEmail2" placeholder="email@example.com" />
             </div>
             <div className="screen-reader-text">
               <label>Don't fill this out if you're human: <input name="bot-field" /></label>
