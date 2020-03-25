@@ -35,7 +35,7 @@ function ParseTags(props) {
  
         if(tag && tag !== undefined){
             if(tag === 'ways_to_help') {
-                string = '❤ Ways To Help'
+                string = '💚 Ways To Help'
             }
             if(tag === 'chow_down') {
                 string = '🍔 Food'
