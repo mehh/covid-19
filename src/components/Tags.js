@@ -35,37 +35,37 @@ function ParseTags(props) {
  
         if(tag && tag !== undefined){
             if(tag === 'chow_down') {
-                string = 'Chow Down'
+                string = '🍔 Chow Down'
             }
             if(tag === 'learn_up') {
-                string = 'Learn Up'
+                string = '🤓 Learn Up'
             }
             if(tag === 'workouts') {
-                string = 'Workouts'
+                string = '💪 Workouts'
             }
             if(tag === 'get_social') {
-                string = 'Get Social'
+                string = '📞 Get Social'
             }
             if(tag === 'be_entertained') {
-                string = 'Be Entertained'
+                string = '🎥 Be Entertained'
             }
             if(tag === 'game_on') {
-                string = 'Game On'
+                string = '🎮 Game On'
             }
             if(tag === 'discounts_and_offers') {
-                string = 'Discounts & Offers'
+                string = '💸 Discounts & Offers'
             }
             if(tag === 'for_the_kids') {
-                string = 'For the Kids'
+                string = '👪 For the Kids'
             }
             if(tag === 'helpful_services') {
-                string = 'Helpful Services'
+                string = '🖥️ Helpful Services'
             }
             if(tag === 'stay_healthy') {
-                string = 'Stay Healthy'
+                string = '👧 Stay Healthy'
             }
             if(tag === 'get_cooking') {
-                string = 'Get Cooking'
+                string = '🍳 Get Cooking'
             }
         }
     });
