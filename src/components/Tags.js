@@ -34,8 +34,11 @@ function ParseTags(props) {
         // console.log('here: '+tag);
  
         if(tag && tag !== undefined){
+            if(tag === 'ways_to_help') {
+                string = '❤ Ways To Help'
+            }
             if(tag === 'chow_down') {
-                string = '🍔 Chow Down'
+                string = '🍔 Food'
             }
             if(tag === 'learn_up') {
                 string = '🤓 Learn Up'

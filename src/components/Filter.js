@@ -41,8 +41,12 @@ export default class Filters extends React.Component {
                 <div class="col-md-12 tags" id="tags">
                     <ul onClick={this.handleClick}>
                         <li data-key="chow_down" className="filter-button">
+                            <div class="emoji">♥️</div>
+                            <div class="title">Ways To Help</div>
+                        </li>
+                        <li data-key="chow_down" className="filter-button">
                             <div class="emoji">🍔</div>
-                            <div class="title">Chow Down</div>
+                            <div class="title">Food</div>
                         </li>
                         <li data-key="learn_up" className="filter-button">
                             <div class="emoji">🤓</div>

@@ -395,6 +395,7 @@ collections:
         label: Tags
         multiple: true
         options: 
+          - { label: "Ways To Help", value: "ways_to_help" }
           - { label: "Cooking & Recipes", value: "cooking_and_recipes" }
           - { label: "Food & Wine ", value: "food_and_wine" }
           - { label: "Entertainment", value: "entertainment" }
@@ -403,7 +404,7 @@ collections:
           - { label: "Discounts & Offers", value: "discounts_and_offers" }
           - { label: "Health & Fitness", value: "health_and_fitness" }
           - { label: "Services", value: "services" }
-          - { label: "Chow Down", value: "chow_down" }
+          - { label: "Food", value: "chow_down" }
           - { label: "Learn Up", value: "learn_up" }
           - { label: "Workouts", value: "workouts" }
           - { label: "Get Social", value: "get_social" }
