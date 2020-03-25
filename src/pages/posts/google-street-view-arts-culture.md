@@ -3,7 +3,7 @@ title: Google Street View - Arts & Culture
 subtitle: Tour famous sites and landmarks online
 link_out: 'https://artsandculture.google.com/project/street-view'
 tags:
-  - learn_up
+  - learning
 thumb_img_path: /images/streetview.png
 content_img_path: /images/streetview.png
 excerpt: 'Tour museums, monuments, and more online'
