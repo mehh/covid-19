@@ -3,7 +3,7 @@ title: Ina Garten on Instagram
 subtitle: Quarantine recipes
 link_out: 'https://www.instagram.com/inagarten/'
 tags:
-  - cooking_and_recipes
+  - get_cooking
 thumb_img_path: /images/about_ina.jpg
 content_img_path: /images/about_ina.jpg
 excerpt: >-
