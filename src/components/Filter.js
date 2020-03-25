@@ -64,10 +64,10 @@ export default class Filters extends React.Component {
                             <div class="emoji">🎥</div>
                             <div class="title">Be Entertained</div>
                         </li>
-                        {/* <li data-key="game_on" className="filter-button">
+                        <li data-key="game_on" className="filter-button">
                             <div class="emoji">🎮</div>
                             <div class="title">Game On</div>
-                        </li> */}
+                        </li>
                         <li data-key="discounts_and_offers" className="filter-button">
                             <div class="emoji">💸</div>
                             <div class="title">Discounts & Offers</div>
