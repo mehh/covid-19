@@ -1,3 +1,125 @@
+#tags ul {
+  [data-key="chow_down"] {
+    &.active {
+      $color: #E31D1D;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="learn_up"]  {
+    &.active {
+      $color: #E3591D;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="workouts"]  {
+    &.active {
+      $color: #F8AB38;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="get_social"]  {
+    &.active {
+      $color: #EEDA2D;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="be_entertained"]  {
+    &.active {
+      $color: #6ECD34;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="game_on"]  {
+    &.active {
+      $color: #34CD68;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="discounts_and_offers"]  {
+    &.active {
+      $color: #34CDA8;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="for_the_kids"]  {
+    &.active {
+      $color: #34A8CD;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="helpful_services"]  {
+    &.active {
+      $color: #343ACD;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="stay_healthy"]  {
+    &.active {
+      $color: #7734CD;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="get_cooking"]  {
+    &.active {
+      $color: #CD34BE;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="health_and_fitness"]  {
+    &.active {
+      $color: #FFAE64;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="learning"]  {
+    &.active {
+      $color: #95C828;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="entertainment"]  {
+    &.active {
+      $color: #2F80ED;
+      border: 1px solid $color;
+    }
+  }
+}
+#tags ul {
+  [data-key="kids"]  {
+    &.active {
+      $color: #ffa500;
+      border: 1px solid $color;
+    }
+  }
+}
+
+
 #tags {
   overflow: hidden;
 
@@ -40,11 +162,17 @@
         line-height: 21px;
         position: relative;
 
-        .filter-button {
-          position: absolute;
-          width: 100%;
-          height: 100%;
+        &.filter-button {
+          position: relative;
+          
+          &::before {
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
         }
+
         .emoji {
           font-size: 30px;
           padding: 25px;
