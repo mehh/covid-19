@@ -4,6 +4,27 @@
     }
 }
 
+[data-tags="ways_to_help"] {
+    $color: #E31D1D;
+    .read-more {
+        border: 2px solid $color !important;
+        a {
+            color: $color !important;
+        }
+    }
+
+    &:hover {
+        .read-more {
+            border: 2px solid $color !important;
+            background: $color !important;
+
+            a {
+                color: #FFF !important;
+            }
+        }
+    }
+}
+
 [data-tags="chow_down"] {
     $color: #E31D1D;
     .read-more {
@@ -224,9 +245,6 @@
         }
     }
 }
-
-
-
 [data-tags="health_and_fitness"] {
     $color: #FFAE64;
     .read-more {
