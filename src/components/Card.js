@@ -2,6 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import Tags from '../components/Tags';
 import {safePrefix} from '../utils';
+import { Link } from "gatsby";
 
 export default class Card extends React.Component {
     state = {
@@ -15,6 +16,7 @@ export default class Card extends React.Component {
     render() {
         return (
             <div class="col-md-6 col-xl-3 mb-5" data-tags={_.get(this.props.post, 'frontmatter.tags')} onClick={this.handleClick}>
+             {/* <Link className="card post-preview lift h-100" to={safePrefix(_.get(this.props.post, 'url'))}> */}
             <a class="card post-preview lift h-100"  rel="noopener noreferrer" target="_blank" href={safePrefix(_.get(this.props.post, 'frontmatter.link_out'))}>
                 <img class="card-img-top" src={safePrefix(_.get(this.props.post, 'frontmatter.thumb_img_path'))} alt={_.get(this.props.post, 'frontmatter.title')} />
                 <div class="card-body">
@@ -31,6 +33,7 @@ export default class Card extends React.Component {
                 </div>
                 </div>
             </a>
+            {/* </Link> */}
             </div>
         )
     }
