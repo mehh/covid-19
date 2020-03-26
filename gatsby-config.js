@@ -45,27 +45,6 @@ module.exports = {
             pageTransitionDelay: 0,
           }
         },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-              plugins: [
-                `gatsby-remark-relative-images`,
-                /* {
-                  resolve: `gatsby-plugin-netlify-cms-paths`,
-                  options: {
-                    cmsConfig: `/static/admin/config.yml`,
-                  },
-                }, */
-                {
-                  resolve: `gatsby-remark-images`,
-                  options: {
-                    maxWidth: 1500,
-                    backgroundColor: 'transparent', // required to display blurred image first
-                  },
-                },
-              ]}
-        },
-        `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -80,31 +59,37 @@ module.exports = {
           },
         `gatsby-source-data`,
         {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `pages`,
-                path: `${__dirname}/src/pages`,
-            },
-        },
-        // {
-        //     resolve: `gatsby-plugin-stackbit-static-sass`,
-        //     options: {
-        //         inputFile: `${__dirname}/src/sass/main.scss`,
-        //         outputFile: `${__dirname}/public/assets/css/main.css`
-        //     },
-        // },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [`gatsby-remark-component`]
-            }
-        },
-        {
             resolve: `gatsby-remark-page-creator`,
             options: {
                 
             }
         },
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            path: `${__dirname}/static/images`,
+          },
+        },
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            path: `${__dirname}/src/pages`,
+          },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+          resolve: `gatsby-transformer-remark`,
+          options: {
+            plugins: [
+              `gatsby-remark-relative-images`,
+              {
+                resolve: `gatsby-remark-images`,
+                options: {},
+              },
+            ],
+          },
+        },       
         {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
