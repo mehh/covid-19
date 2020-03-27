@@ -68,12 +68,14 @@ module.exports = {
           resolve: `gatsby-source-filesystem`,
           options: {
             path: `${__dirname}/static/images`,
+            name: 'media',
           },
         },
         {
           resolve: `gatsby-source-filesystem`,
           options: {
             path: `${__dirname}/src/pages`,
+            name: 'content',
           },
         },
         `gatsby-transformer-sharp`,
@@ -81,15 +83,9 @@ module.exports = {
         {
           resolve: `gatsby-transformer-remark`,
           options: {
-            plugins: [
-              `gatsby-remark-relative-images`,
-              {
-                resolve: `gatsby-remark-images`,
-                options: {},
-              },
-            ],
           },
-        },       
+        }, 
+        `gatsby-plugin-netlify-cms`,      
         {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {

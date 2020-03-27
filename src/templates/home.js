@@ -3,10 +3,10 @@ import _ from 'lodash';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-import Tags from '../components/Tags'
+
 import Filter from '../components/Filter'
 import components, {Layout} from '../components/index';
-import {getPages, Link, safePrefix} from '../utils';
+import {getPages} from '../utils';
 
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';

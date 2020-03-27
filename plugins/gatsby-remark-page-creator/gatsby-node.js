@@ -2,12 +2,6 @@ const path = require("path");
 const {createFilePath} = require("gatsby-source-filesystem");
 const _ = require('lodash');
 
-// gatsby-node.js
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
-
-exports.onCreateNode = ({ node }) => {
-  fmImagesToRelative(node);
-};
 
 function findFileNode({node, getNode}) {
     let fileNode = node;
@@ -35,8 +29,17 @@ function findFileNode({node, getNode}) {
 
     return fileNode
 }
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+
+exports.onCreateNode = ({ node }) => {
+    fmImagesToRelative(node);
+};
+
+// gatsby-node.js
+
 
 exports.onCreateNode = ({node, getNode, actions}, options) => {
+    fmImagesToRelative(node);
 
     const {createNodeField} = actions;
 
